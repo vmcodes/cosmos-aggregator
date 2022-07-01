@@ -1,0 +1,23 @@
+{
+  "name": "cosmos-aggregator",
+  "author": "vmcodes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "cosmos data aggregator",
+  "scripts": {
+    "start": "pm2-runtime start ecosystem.config.js",
+    "dev": "node index"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "mongoose": "^6.4.0",
+    "node-cron": "^3.0.1",
+    "node-mailer": "^0.1.1"
+  },
+  "devDependencies": {
+    "pm2": "^5.2.0",
+    "uuid": "^8.3.2"
+  }
+}
