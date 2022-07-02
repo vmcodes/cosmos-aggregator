@@ -9,5 +9,5 @@ The purpose of this aggregator is to gather up-to-date information and then form
 ## Run
 
 ```bash
-docker compose up -d
+npm run dev
 ```
