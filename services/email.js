@@ -20,8 +20,8 @@ async function sendEmail() {
   // send mail with defined transport object
   try {
     await transporter.sendMail({
-      from: "no-reply@objectpress.io", // sender address
-      to: "vincent@objectpress.io", // list of receivers
+      from: smtpCreds.from, // sender address
+      to: smtp.to, // list of receivers
       subject: "Cosmo: Daily Jobs Complete ✔", // subject line
       text: "Daily jobs complete.", // plain text body
       html: "<b>Daily jobs complete.</b>", // html body
